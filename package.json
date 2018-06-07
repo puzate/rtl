@@ -1,0 +1,30 @@
+{
+  "name": "rtl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp-autoprefixer": "^5.0.0"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/puzate/rtl.git"
+  },
+  "keywords": [
+    "rtl"
+  ],
+  "author": "Cyril Bazyliev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/puzate/rtl/issues"
+  },
+  "homepage": "https://github.com/puzate/rtl#readme"
+}

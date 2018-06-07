@@ -612,5 +612,226 @@ body
 		border-radius: 10px
 		color: $grey-font
 // PAGE 2 ENDS
+// PAGE 3 STARTS
+.second-step
+	margin: 0 auto
+.second-step_title
+	h3
+		color: $blue-font
+		font-size: 26px
+		font-weight: bold
+.second-step_container_position
+	border: 3px solid $grey
+.second-step_container_position.accepted
+	.second-step_container_position_btn-container
+		background-color: #f6f6f6
+		h4
+			color: $blue-font
+			&:before
+				content: "\2714"
+				color: #36c228
+		.second-step_container_position_btn-container_price
+			.__new-price
+				color: $blue-font
+.second-step_container_position_btn-container
+	background-color: #1f3863
+	a
+		display: inline-block
+		width: 95%
+		padding: 10px 15px
+		color: $grey-font
+		&:hover
+			text-decoration: none
+	h4
+		font-size: 26px
+		display: inline-block
+		font-weight: bold
+		color: #fff
+		margin: 0
+		&:before
+			content: '\2716'
+			color: #f00
+			margin-left: 25px
+	.__delete_position	
+		border: none
+		outline: 0
+		text-align: center
+		background-color: transparent
+		margin-left: 15px
+		i
+			font-size: 20px
+			color: $grey-font
+.second-step_container_position_btn-container_price
+	float: left
+	margin-bottom: 0
+	.__old-price
+		text-decoration: line-through
+		color: $yellow
+		font-size: 16px
+		margin-left: 10px
+	.__new-price
+		color: #fff
+		font-weight: bold
+		font-size: 20px
+		margin-left: 15px
+	.__edit
+		font-size: 16px
+		margin-left: 15px
+.second-step_container_position_content_main_list
+	padding: 10px 0 0 0
+	margin-right: 15px
+	border-bottom: 3px solid $blue-font
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+		li
+			display: inline-block
+			font-size: 20px
+			a
+				padding: 10px 15px
+				color: $grey-font
+				background-color: $grey
+				display: block
+				&:hover
+					text-decoration: none
+				&:focus
+					text-decoration: none
+			&.active
+				a
+					color: #fff
+					background-color: $blue-font
+.second-step_container_position_content_main_imgs
+	margin-right: 15px
+	.__thumb-imgs
+		max-width: 100px
+		display: inline-block
+		img
+			margin: 10px auto
+			border: 1px solid $grey
+			cursor: pointer
+	.__full-img
+		display: inline-block
+		max-width: 340px
+		vertical-align: top
+		margin-top: 10px
+		margin-right: 10px
+		img
+			cursor: pointer
+			border: 1px solid $grey
+.second-step_container_position_content_main_describe
+	margin-top: 15px
+	font-size: 15px
+	p
+		margin-bottom: 30px
+		span
+			color: $blue-font
+			font-weight: bold
+	ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+		font-size: 16px
+	a
+		margin-top: 30px
+		text-decoration: underline
+		cursor: pointer
+		display: block
+.second-step_container_position_content_sidebar
+	background-color: #f6f6f6
+	padding-top: 20px
+	form
+		margin-right: 30px
+		margin-left: 30px
+		p
+			margin-bottom: 0
+			margin-top: 10px
+			&:last-child
+				padding-bottom: 30px
+		legend
+			border-bottom: 0
+			color: $blue-font
+		select
+			width: 100%
+			padding: 8px 10px
+			border: 2px solid $grey
+			border-radius: 2px
+			-webkit-appearance: none
+			-moz-appearance: none
+			appearance: none
+			color: $grey-font
+			font-size: 16px
+			&:focus
+				outline: 0
+				border-color: $yellow
+			option
+				color: $grey-font
+				font-size: 16px
+				border: none
+				outline: 0
+				padding: 5px
+				&:focus
+					outline: 0
+					border-color: $yellow
+		button[type="button"]
+			padding: 8px 35px
+			background-color: $yellow
+			border: 2px solid $grey
+			border-radius: 35px
+			color: #fff
+			display: block
+			margin: 0 auto
+			max-width: 80%
+			// margin-bottom: 30px
+			margin-top: 30px
+			font-size: 20px
+			&:focus
+				outline: 0
+.second-step_buy-block
+	margin-top: 50px
+.second-step_buy-block_right-block
+	max-width: 40%
+	.__add-package
+		display: block
+		font-size: 20px
+		font-weight: bold
+		background-color: #6fac46
+		color: #c00000
+		border: 2px solid $grey
+		border-radius: 5px
+		padding: 8px 10px
+		span
+			color: #fff
+			float: left
+			margin-left: 15px
+	.__save-package
+		button
+			border: none
+			outline: 0
+			background-color: #d2d2d2
+			border-radius: 25px
+			padding: 10px 40px
+			color: #fff
+			display: block
+			margin: 0 auto
+			margin-top: 15px
+.second-step_buy-block_left-block
+	vertical-align: middle
+	.__full-price
+		font-weight: bold
+		color: #626262
+		font-size: 22px
+		margin-left: 20px
+	.__go-to-payment
+		background-color: $blue-font
+		font-size: 24px
+		border: 2px solid $grey
+		border-radius: 35px
+		color: #fff
+		padding: 5px 20px
+		&:focus
+			outline: 0
+// PAGE 3 ENDS
+@import '_modal.sass'
 @import '_hover.sass'
 @import '_media.sass'

@@ -679,6 +679,231 @@ body {
     border-radius: 10px;
     color: #9f9f9f; }
 
+.second-step {
+  margin: 0 auto; }
+
+.second-step_title h3 {
+  color: #1f3864;
+  font-size: 26px;
+  font-weight: bold; }
+
+.second-step_container_position {
+  border: 3px solid #e5e5e5; }
+
+.second-step_container_position.accepted .second-step_container_position_btn-container {
+  background-color: #f6f6f6; }
+  .second-step_container_position.accepted .second-step_container_position_btn-container h4 {
+    color: #1f3864; }
+    .second-step_container_position.accepted .second-step_container_position_btn-container h4:before {
+      content: "\2714";
+      color: #36c228; }
+  .second-step_container_position.accepted .second-step_container_position_btn-container .second-step_container_position_btn-container_price .__new-price {
+    color: #1f3864; }
+
+.second-step_container_position_btn-container {
+  background-color: #1f3863; }
+  .second-step_container_position_btn-container a {
+    display: inline-block;
+    width: 95%;
+    padding: 10px 15px;
+    color: #9f9f9f; }
+    .second-step_container_position_btn-container a:hover {
+      text-decoration: none; }
+  .second-step_container_position_btn-container h4 {
+    font-size: 26px;
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+    margin: 0; }
+    .second-step_container_position_btn-container h4:before {
+      content: '\2716';
+      color: #f00;
+      margin-left: 25px; }
+  .second-step_container_position_btn-container .__delete_position {
+    border: none;
+    outline: 0;
+    text-align: center;
+    background-color: transparent;
+    margin-left: 15px; }
+    .second-step_container_position_btn-container .__delete_position i {
+      font-size: 20px;
+      color: #9f9f9f; }
+
+.second-step_container_position_btn-container_price {
+  float: left;
+  margin-bottom: 0; }
+  .second-step_container_position_btn-container_price .__old-price {
+    text-decoration: line-through;
+    color: #ffc000;
+    font-size: 16px;
+    margin-left: 10px; }
+  .second-step_container_position_btn-container_price .__new-price {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 15px; }
+  .second-step_container_position_btn-container_price .__edit {
+    font-size: 16px;
+    margin-left: 15px; }
+
+.second-step_container_position_content_main_list {
+  padding: 10px 0 0 0;
+  margin-right: 15px;
+  border-bottom: 3px solid #1f3864; }
+  .second-step_container_position_content_main_list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .second-step_container_position_content_main_list ul li {
+      display: inline-block;
+      font-size: 20px; }
+      .second-step_container_position_content_main_list ul li a {
+        padding: 10px 15px;
+        color: #9f9f9f;
+        background-color: #e5e5e5;
+        display: block; }
+        .second-step_container_position_content_main_list ul li a:hover {
+          text-decoration: none; }
+        .second-step_container_position_content_main_list ul li a:focus {
+          text-decoration: none; }
+      .second-step_container_position_content_main_list ul li.active a {
+        color: #fff;
+        background-color: #1f3864; }
+
+.second-step_container_position_content_main_imgs {
+  margin-right: 15px; }
+  .second-step_container_position_content_main_imgs .__thumb-imgs {
+    max-width: 100px;
+    display: inline-block; }
+    .second-step_container_position_content_main_imgs .__thumb-imgs img {
+      margin: 10px auto;
+      border: 1px solid #e5e5e5;
+      cursor: pointer; }
+  .second-step_container_position_content_main_imgs .__full-img {
+    display: inline-block;
+    max-width: 340px;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-right: 10px; }
+    .second-step_container_position_content_main_imgs .__full-img img {
+      cursor: pointer;
+      border: 1px solid #e5e5e5; }
+
+.second-step_container_position_content_main_describe {
+  margin-top: 15px;
+  font-size: 15px; }
+  .second-step_container_position_content_main_describe p {
+    margin-bottom: 30px; }
+    .second-step_container_position_content_main_describe p span {
+      color: #1f3864;
+      font-weight: bold; }
+  .second-step_container_position_content_main_describe ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 16px; }
+  .second-step_container_position_content_main_describe a {
+    margin-top: 30px;
+    text-decoration: underline;
+    cursor: pointer;
+    display: block; }
+
+.second-step_container_position_content_sidebar {
+  background-color: #f6f6f6;
+  padding-top: 20px; }
+  .second-step_container_position_content_sidebar form {
+    margin-right: 30px;
+    margin-left: 30px; }
+    .second-step_container_position_content_sidebar form p {
+      margin-bottom: 0;
+      margin-top: 10px; }
+      .second-step_container_position_content_sidebar form p:last-child {
+        padding-bottom: 30px; }
+    .second-step_container_position_content_sidebar form legend {
+      border-bottom: 0;
+      color: #1f3864; }
+    .second-step_container_position_content_sidebar form select {
+      width: 100%;
+      padding: 8px 10px;
+      border: 2px solid #e5e5e5;
+      border-radius: 2px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      color: #9f9f9f;
+      font-size: 16px; }
+      .second-step_container_position_content_sidebar form select:focus {
+        outline: 0;
+        border-color: #ffc000; }
+      .second-step_container_position_content_sidebar form select option {
+        color: #9f9f9f;
+        font-size: 16px;
+        border: none;
+        outline: 0;
+        padding: 5px; }
+        .second-step_container_position_content_sidebar form select option:focus {
+          outline: 0;
+          border-color: #ffc000; }
+    .second-step_container_position_content_sidebar form button[type="button"] {
+      padding: 8px 35px;
+      background-color: #ffc000;
+      border: 2px solid #e5e5e5;
+      border-radius: 35px;
+      color: #fff;
+      display: block;
+      margin: 0 auto;
+      max-width: 80%;
+      margin-top: 30px;
+      font-size: 20px; }
+      .second-step_container_position_content_sidebar form button[type="button"]:focus {
+        outline: 0; }
+
+.second-step_buy-block {
+  margin-top: 50px; }
+
+.second-step_buy-block_right-block {
+  max-width: 40%; }
+  .second-step_buy-block_right-block .__add-package {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #6fac46;
+    color: #c00000;
+    border: 2px solid #e5e5e5;
+    border-radius: 5px;
+    padding: 8px 10px; }
+    .second-step_buy-block_right-block .__add-package span {
+      color: #fff;
+      float: left;
+      margin-left: 15px; }
+  .second-step_buy-block_right-block .__save-package button {
+    border: none;
+    outline: 0;
+    background-color: #d2d2d2;
+    border-radius: 25px;
+    padding: 10px 40px;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px; }
+
+.second-step_buy-block_left-block {
+  vertical-align: middle; }
+  .second-step_buy-block_left-block .__full-price {
+    font-weight: bold;
+    color: #626262;
+    font-size: 22px;
+    margin-left: 20px; }
+  .second-step_buy-block_left-block .__go-to-payment {
+    background-color: #1f3864;
+    font-size: 24px;
+    border: 2px solid #e5e5e5;
+    border-radius: 35px;
+    color: #fff;
+    padding: 5px 20px; }
+    .second-step_buy-block_left-block .__go-to-payment:focus {
+      outline: 0; }
+
 @media screen and (min-width: 992px) {
   .top-banner_container_btn:hover {
     color: #ffc000; }
@@ -700,7 +925,15 @@ body {
   .page-list-content_sidebar_basket_pay_paying .__next-step:hover {
     background-color: #b4c6e7; }
   button.__position-add-to-cart:hover {
-    background-color: #ffc000; } }
+    background-color: #ffc000; }
+  .second-step_container_position_btn-container .__delete_position:hover i {
+    color: #000; }
+  .second-step_container_position_btn-container_price .__edit:hover {
+    text-decoration: underline; }
+  .second-step_buy-block_right-block .__save-package button:hover {
+    background-color: #9f9f9f; }
+  .second-step_buy-block_left-block .__go-to-payment:hover {
+    background-color: #203864; } }
 
 @media screen and (min-width: 2000px) {
   .reg-form_call-centre {
