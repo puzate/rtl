@@ -8,6 +8,12 @@ $(document).ready(function()  {
   var $this = $(this);
     $img.attr('src', $this.data('image'));
   });
+  var $imgs = $('.first-step_more-info_modal_imgs .__full-img img'),
+    dsrc = $imgs.attr('src');
+  $('.first-step_more-info_modal_imgs .__thumbs-img img').click(function() {
+  var $thiss = $(this);
+    $imgs.attr('src', $thiss.data('image'));
+  });
   $(".second-step_container_position:first-child .second-step_container_position_content.collapse").addClass("in");
   $('.second-step_container_position_content_sidebar button[type="button"]').click(function() {
 	  $(this).closest('.second-step_container_position').next().find('.second-step_container_position_content').addClass('in');

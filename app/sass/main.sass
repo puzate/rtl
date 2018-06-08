@@ -2,6 +2,11 @@
 @import '_fonts.sass'
 *
 	direction: rtl
+a, button
+	&:focus
+		outline: 0
+	&:active
+		outline: 0
 body
 	max-width: 2480px
 	margin: 0 auto
@@ -494,8 +499,8 @@ body
 		margin: 0
 		padding: 0
 		max-height: 320px
-		overflow-y: auto
-		overflow-x: visible
+		// overflow-y: auto
+		// overflow-x: visible
 		direction: ltr
 		&::-webkit-scrollbar
 			width: 8px
@@ -525,12 +530,12 @@ body
 					content: ''
 					position: absolute
 					top: 0
-					left: -10px
+					left: -20px
 					width: 0;
 					height: 0;
 					border-style: solid;
 					border-width: 7.5px 10px 7.5px 10px;
-					border-color: transparent black transparent transparent;
+					border-color: transparent $yellow transparent transparent;
 .page-list-content_content_content_sort
 	margin: 15px auto 10px
 	padding-bottom: 5px
@@ -571,6 +576,39 @@ body
 		height: auto
 	li
 		padding: 10px 15px
+.page-list-content_content_container-for-sub-tabs_show-more
+	margin-top: 50px
+	text-align: center
+	button.__show-more_button
+		color: #fff
+		outline: 0
+		border: none
+		background-color: $blue-font
+		border-radius: 25px
+		font-weight: bold
+		font-size: 24px
+		padding: 8px 25px
+	h4
+		color: $blue-font
+		font-size: 24px
+		margin-top: 30px
+		font-weight: bold
+		&:before
+			content: ''
+			width: 36%
+			height: 2px
+			background-color: $grey-font
+			display: inline-block
+			margin-left: 20px
+			vertical-align: middle
+		&:after
+			content: ''
+			width: 36%
+			height: 2px
+			background-color: $grey-font
+			display: inline-block
+			margin-right: 20px
+			vertical-align: middle
 .page-list-content_content_content_sort_filter
 	margin-right: 25px
 	cursor: pointer
@@ -832,6 +870,757 @@ body
 		&:focus
 			outline: 0
 // PAGE 3 ENDS
+// PAGE 4 STARTS
+.products-in-package_container
+	border: 2px solid $grey
+.products-in-package_position
+	margin: 2px auto
+	.products-in-package_position_img
+		display: inline-block
+		max-width: 100px
+		max-height: 100px
+.products-in-package_position_describe
+	display: inline-block
+	vertical-align: top
+	margin-right: 5px
+	h6
+		color: $grey-font
+		font-size: 16px
+		margin-top: 3px
+	p
+		.old-price
+			font-size: 17px
+			margin-left: 10px
+			text-decoration: line-through
+			color: $yellow
+		.new-price
+			font-size: 24px
+			color: $blue-font
+	span.position_more-info
+		color: #e5e5e5
+		text-decoration: underline
+		font-size: 16px
+		cursor: pointer
+.products-in-package_position_delete
+	display: inline-block
+	width: 25%
+	float: left
+	button
+		outline: 0
+		border: none
+		background-color: transparent
+		display: block
+		margin: 0 auto
+		padding: 0
+		i
+			color: $grey-font
+			display: block
+			vertical-align: middle
+			line-height: 100px
+			text-align: center
+.gift-package-container	
+	margin-top: 10px
+	padding: 20px 20px
+	background-color: $blue-font
+.gift-package-container_make-package
+	vertical-align: middle
+	p
+		margin-bottom: 0
+		color: $yellow
+		font-size: 26px
+		.gift-package-container_make-package_full-price
+			color: #fff
+			font-weight: bold
+			margin-right: 10px
+.gift-package-container_package-with-gift
+	vertical-align: middle
+	p
+		margin-bottom: 0
+		font-size: 26px
+		color: #fff
+		i
+			font-size: 32px
+			vertical-align: middle
+			margin-right: 10px
+			color: $yellow
+.gift-package-container_package-price
+	text-align: left
+	vertical-align: middle
+	p
+		margin-bottom: 0
+		font-size: 26px
+		color: #fff
+		.old-price
+			text-decoration: line-through
+			color: $yellow
+			font-size: 20px
+			margin: 0 5px
+		.new-price
+			font-size: 25px
+.forms-to-pay
+	margin-top: 50px
+.forms-to-pay_forms-for-login,
+.forms-to-pay_forms-for-sign-up,
+.forms-delivery_container,
+.third-step_modal_authorized_forms_login,
+.third-step_modal_authorized_forms_sign-up
+	padding: 20px 15px 20px 30px
+	background-color: #f6f6f6
+	border: 2px solid $grey
+	border-radius: 5px
+	form
+		legend
+			color: #7c7c7c
+			font-size: 20px
+			font-weight: bold
+			border-width: 1px
+			border-color: #7c7c7c
+		p
+			margin-top: 20px
+			margin-bottom: 0
+			display: inline-block
+			width: 100%
+			label
+				color: #4471c4
+				font-size: 16px
+				display: block
+				font-weight: bold
+				line-height: 22px
+				&.obligatorily
+					&:after
+						content: '*'
+						color: #f00
+						font-weight: bold
+						font-size: 18px
+			input
+				width: 100%
+				border: 1px solid $grey
+				border-radius: 4px
+				padding: 10px 10px
+				color: $blue-font
+				&:focus
+					border-color: $blue-font
+			a.__forgot-password
+				cursor: pointer
+				color: $grey-font
+				font-size: 14px
+				text-decoration: underline
+			button
+				color: #4471c4
+				background-color: #fff
+				border: 2px solid $grey
+				padding: 7px 30px
+				font-weight: bold
+.forms-to-pay_forms-for-sign-up
+	form
+		p
+			display: inline-block
+			width: 46%
+			margin-left: 10px
+			margin-right: 10px
+			button
+				margin-top: 18px
+.user-login-info
+	padding: 30px 0
+.user-login-info_describe_avatar
+	max-width: 50px
+	display: inline-block
+	vertical-align: top
+.user-login-info_describe_forms
+	display: inline-block
+	vertical-align: top
+	margin-right: 10px
+.user-login-info_describe_forms_name
+	font-weight: bold
+	color: #4471c4
+	font-size: 16px
+	margin-top: 3px
+.user-login-info_describe_forms_edit,
+.user-login-info_describe_forms_exit
+	text-decoration: underline
+	font-size: 14px
+	margin-left: 10px
+	color: #7c7c7c
+	cursor: pointer
+.user-login-info_save-package
+	button
+		color: #fff
+		background-color: $grey-font
+		margin: 0 auto
+		padding: 10px 40px
+		border-radius: 25px
+		outline: 0
+		border: none
+		margin-top: 10px
+.forms-delivery_container
+	form
+		p
+			display: inline-block
+			max-width: 30%
+			margin-left: 15px
+			margin-right: 15px
+			button
+				margin-top: 20px
+.payment-method
+	margin-top: 50px
+.payment-method_title
+	font-size: 30px
+	font-weight: bold
+	color: $blue-font
+	margin-bottom: 30px
+.payment-method_position
+	background-color: $blue-font
+	margin: 20px 20px
+	padding: 30px 0 20px
+	text-align: center
+.payment-method_position_img
+	svg
+		fill: $grey
+		width: 100px
+		height: 100px
+.payment-method_position_describe
+	h3
+		color: #fff
+		font-weight: bold
+		font-size: 30px
+.contact-form
+	margin-top: 50px
+	text-align: center
+.container-form_container
+	h3
+		color: $blue-font
+		font-size: 28px
+		font-weight: bold
+		margin-bottom: 30px
+	form
+		p
+			display: inline-block
+			width: 20%
+			margin-left: 15px
+			margin-right: 15px
+			input
+				color: $blue-font
+				background-color: #fff
+				padding: 8px 10px
+				width: 100%
+				display: block
+				border: 1px solid $blue-font
+				&::placeholder
+					color: $grey-font
+		p.__btn
+			button
+				background-color: $yellow
+				padding: 7px 45px
+				color: #fff
+				border: 2px solid $grey
+				border-radius: 25px
+				font-size: 20px
+				margin-top: 25px
+				&:focus
+					outline: 0
+// PAGE 4 ENDS
+// POPUP`S STARTS
+.first-step_more-info_modal
+	width: 100%
+	max-width: 80vw
+	margin: 0 auto
+	background-color: #fff
+	margin-top: 7vh
+	margin-bottom: 7vh
+	direction: ltr
+	max-height: 86vh
+	overflow-y: auto
+	padding: 40px  0 20px
+	position: relative
+	&::-webkit-scrollbar
+		width: 8px
+		height: 0px
+	&::-webkit-scrollbar-button
+		background-color: $grey-font
+		display: none
+	&::-webkit-scrollbar-track
+		background-color: $grey-font
+	&::-webkit-scrollbar-track-piece
+		background-color: #ffffff
+	&::-webkit-scrollbar-thumb
+		height: 50px
+		background-color: $grey-font
+		border-radius: 3px
+	&::-webkit-resizer
+		background-color: $grey-font
+	.__modal-close
+		position: absolute
+		right: 2px
+		top: 2px
+		button
+			background-color: transparent
+			outline: 0
+			border: none
+			font-size: 30px
+			color: $grey-font
+.first-step_more-info_modal_title
+	h4
+		font-weight: bold
+		color: $blue-font
+		font-size: 24px
+		margin-right: 15px
+.first-step_more-info_modal_imgs
+	margin-right: 15px
+	.__thumbs-img
+		vertical-align: top
+		display: inline-block
+		max-width: 100px
+		max-height: 304px
+		overflow-y: auto
+		direction: ltr
+		img
+			border: 1px solid $grey
+			margin-bottom: 5px
+		&::-webkit-scrollbar
+			width: 8px
+			height: 0px
+		&::-webkit-scrollbar-button
+			background-color: $grey-font
+			display: none
+		&::-webkit-scrollbar-track
+			background-color: $grey-font
+		&::-webkit-scrollbar-track-piece
+			background-color: #ffffff
+		&::-webkit-scrollbar-thumb
+			height: 50px
+			background-color: $grey-font
+			border-radius: 3px
+		&::-webkit-resizer
+			background-color: $grey-font
+	.__full-img
+		vertical-align: top
+		display: inline-block
+		max-width: 74%
+.first-step_more-info_modal_describe
+	display: inline-block
+	width: 65%
+	h5
+		font-size: 20px
+		font-weight: bold
+		color: #000
+		margin-top: 0
+	p.__describe
+		font-size: 20px
+		line-height: 20px
+		color: #7a7e85
+	p.__colom-titul
+		color: $blue-font
+		font-size: 16px
+		font-weight: bold
+		margin: 20px 0
+		span
+			color: #000
+	ul.__options
+		color: #7a7e85
+		margin: 0
+		padding: 0
+		list-style-type: none
+		li
+			font-size: 16px
+			span
+				font-weight: bold
+	ul.__social-nets
+		list-style-type: none
+		margin: 0
+		padding: 0
+		color: #fff
+		margin-top: 25px
+		li
+			display: inline-block
+			border-radius: 4px
+			padding: 4px 8px
+			font-weight: bold
+			vertical-align: middle
+			a
+				color: #fff
+				&:hover
+					text-decoration: none
+			&.__mail
+				background-color: #dd4b3d
+				&:hover
+					background-color: #bf382b
+				&:before
+					content: "\f003"
+					font-family: 'fontawesome'
+					font-size: 19px
+					line-height: 19px
+					float: left
+					margin-right: 5px
+			&.__whatsapp
+				background-color: #25D362
+				&:hover
+					background-color: #19b751
+			&.__fb
+				background-color: #3B5998
+				&:before
+					content: "\f09a"
+					margin-right: 10px
+					line-height: 19px
+					font-size: 19px
+					float: left
+					font-family: 'fontawesome'
+	p.__print
+		margin-top: 15px
+		a
+			color: #7a7e85
+			font-size: 16px
+			&:hover
+				text-decoration: none
+			&:after
+				content: "\f02f"
+				font-family: 'fontawesome'
+	.__go-to
+		font-size: 18px
+		margin-top: 15px
+		a.__foot
+			color: #7a7e85
+			&:hover
+				text-decoration: none
+				color: #000
+		a.__position-page
+			color: $blue-font
+			font-weight: bold
+			float: left
+			text-decoration: underline
+			&:hover
+				text-decoration: underline
+.first-step_more-info_modal_price
+	display: inline-block
+	vertical-align: top
+	text-align: center
+	width: 34%
+	border: 1px solid #ededed
+	.__header-price
+		padding: 30px 0
+		background-color: #f6f6f6
+		text-align: center
+		h3
+			color: $blue-font
+			font-size: 22px
+			margin: 0
+	.__package-price
+		padding: 30px 0
+		background-color: #d2d2d2
+		h3
+			margin: 0
+			color: $blue-font
+			font-weight: bold
+		h4
+			color: #fff
+			margin: 0
+			margin-top: 15px
+			font-size: 21px
+	.__end-price_go-next
+		background-color: #f6f6f6
+		padding: 30px 0 40px
+		font-size: 20px
+		.__summ
+			color: $grey-font
+			font-size: 20px
+		.__old-price
+			color: $yellow
+			font-size: 17px
+			text-decoration: line-through
+		.__new-price
+			color: $blue-font
+			font-size: 19px
+		button
+			padding: 8px 20px
+			background-color: $yellow
+			color: #fff
+			border: 2px solid $grey
+			border-radius: 25px
+			margin-top: 20px
+			&:focus
+				outline: 0
+.first-step_more-info_modal_tabs
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+		border-bottom: 2px solid #d9d9d9
+		li
+			display: inline-block
+			background-color: #d9d9d9
+			margin-left: -.36em
+			a
+				margin: 4px 3px 0
+				background-color: transparent
+				display: block
+				padding: 10px 15px
+				color: $grey-font
+				font-size: 24px
+				&:focus
+					text-decoration: none
+				&:hover
+					text-decoration: none
+			&.active
+				a
+					background-color: #fff
+.first-step_more-info_modal_tab-content
+	border: 2px solid #d9d9d9
+	border-top: 0
+	padding: 30px 20px
+.first-step_more-info_modal_tab-content_table
+	table
+		width: 100%
+		tbody
+			tr
+				td
+					padding: 9px 10px
+					font-size: 16px
+					border: 3px solid #eeeeee
+					color: #808080
+					&:first-child
+						color: #2e3092
+						font-weight: 600
+						width: 20%
+						border-left: 0
+.first-step_more-info_modal_tab-content_describe
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+		li
+			color: #2e3092
+			margin: 15px 0
+.first-step_filter_modal
+	width: 100%
+	max-width: 80vw
+	display: block
+	margin: 0 auto
+	background-color: #fff
+	position: relative
+	border: 1px solid $yellow
+	margin-top: 20vh
+	.__modal-close
+		position: absolute
+		top: 0
+		right: 5px
+		button
+			background-color: transparent
+			outline: 0
+			border: none
+			font-size: 30px
+			color: $yellow
+.first-step_filter_modal_title
+	background-color: $blue-font
+	color: #fff
+	text-align: center
+	padding: 10px 0
+	font-size: 28px
+	margin: 0
+.first-step_filter_modal_forms
+	margin: 10px 0
+.first-step_filter_modal_forms_form
+	max-width: 20%
+	min-width: 20%
+	border-left: 1px solid $grey
+	display: inline-block
+	padding: 10px 20px
+	&:last-child
+		border-left: 0
+	legend
+		border-bottom: 0
+		color: $blue-font
+		font-weight: bold
+.first-step_filter_modal_forms_button
+	position: absolute
+	bottom: -50px
+	left: 0
+	button
+		background-color: $yellow
+		color: #fff
+		border: none
+		outline: 0
+		padding: 8px 35px
+		border-radius: 25px
+.second-step_choose-gift
+	position: relative
+	width: 100%
+	max-width: 700px
+	margin: 0 auto
+	margin-top: 20vh
+	border: 1px solid $yellow
+	.__modal-close
+		position: absolute
+		top: 0
+		right: 5px
+		button
+			background-color: transparent
+			outline: 0
+			border: none
+			font-size: 30px
+			color: $yellow
+.second-step_choose-gift_title
+	background-color: $blue-font
+	padding: 10px 0
+	h3
+		margin: 0
+		font-size: 28px
+		color: #fff
+		text-align: center
+		i
+			color: $grey
+			margin-left: 10px
+.second-step_choose-gift_container
+	background-color: #f6f6f6
+.second-step_choose-gift_position
+	max-width: 49.72%
+	display: inline-block
+	vertical-align: top
+	width: 49.7%
+	margin-top: 1px
+	margin-bottom: 3px
+	&.true
+		.second-step_choose-gift_position_describe
+			.__condition
+				color: #6fac46
+		.second-step_choose-gift_position_add-gift
+			button
+				color: $yellow
+			h4
+				color: $grey-font
+	&.false
+		.second-step_choose-gift_position_describe
+			.__condition
+				color: #ff4f4f
+.second-step_choose-gift_position_img
+	display: inline-block
+	max-width: 100px
+	vertical-align: top
+	text-align: right
+	width: 27%
+.second-step_choose-gift_position_describe
+	display: inline-block
+	vertical-align: top
+	text-align: right
+	width: 55%
+	.__title
+		color: $grey-font
+		font-size: 18px
+		margin-top: 3px
+		margin-bottom: 0
+	.__price
+		font-weight: bold
+		color: $blue-font
+		font-size: 19px
+		margin-bottom: 0
+		span
+			text-decoration: line-through
+			color: $yellow
+			font-size: 16px
+			margin-left: 10px
+	.__more-info
+		margin: 0
+		margin-top: 0
+		margin-bottom: 4px
+		a
+			text-decoration: underline
+			color: $grey-font
+	.__condition
+		margin-bottom: 0
+		font-size: 12px
+		&:after
+			content: '*'
+.second-step_choose-gift_position_add-gift
+	display: inline-block
+	vertical-align: top
+	text-align: center
+	width: 15%
+	button
+		font-size: 34px
+		color: $grey-font
+		margin-bottom: 10px
+		margin-top: 10px
+		line-height: 34px
+		display: block
+		margin-right: auto
+		margin-left: auto
+		background-color: transparent
+		border: none
+		outline: 0
+	h4
+		color: #d2d2d2
+		margin-top: 0
+.third-step_modal_authorized
+	width: 900px
+	max-width: 100%
+	margin: 0 auto
+	border: 1px solid $yellow
+	margin-top: 10vh
+	background-color: #fff
+	position: relative
+	.__modal-close
+		position: absolute
+		top: 0
+		right: 5px
+		button
+			background-color: transparent
+			outline: 0
+			border: none
+			font-size: 30px
+			color: $yellow
+.third-step_modal_authorized_title
+	background-color: $blue-font
+	padding: 10px 0
+	h3
+		color: #fff
+		text-align: center
+		font-size: 28px
+		margin: 0
+.third-step_modal_authorized_forms
+	padding: 20px 50px 40px
+.third-step_modal_authorized_forms_title
+	text-align: center
+	margin-bottom: 30px
+	h3
+		display: inline-block
+		vertical-align: top
+		color: #f00
+		font-weight: bold
+	img
+		display: inline-block
+		vertical-align: top
+		max-width: 50px
+		margin-top: 10px
+		margin-left: 15px
+.third-step_modal_authorized_forms_login
+	display: inline-block
+	vertical-align: top
+	background-color: transparent
+	border: none
+	padding: 0
+	padding-left: 20px
+	width: 33%
+	border-left: 1px solid $grey
+	form
+		legend
+			border-bottom: none
+.third-step_modal_authorized_forms_sign-up
+	width: 66%
+	display: inline-block
+	vertical-align: top
+	border: none
+	padding: 0 20px 0 0
+	background-color: transparent
+	form
+		legend
+			border-bottom: none
+		p
+			max-width: 45%
+			margin-left: 15px
+			label
+				line-height: 22px
+			button
+				margin-top: 16px
+
+// POPUP`S ENDS
 @import '_modal.sass'
 @import '_hover.sass'
 @import '_media.sass'
