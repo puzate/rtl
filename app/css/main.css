@@ -173,7 +173,8 @@ body {
   max-width: 420px; }
   .reg-form_call-centre_container img {
     max-width: 200px;
-    display: inline-block; }
+    display: inline-block;
+    max-height: 195px; }
 
 .reg-form_call-centre_info {
   color: #ffc000;
@@ -762,7 +763,7 @@ body {
     outline: 0;
     text-align: center;
     background-color: transparent;
-    margin-left: 15px; }
+    margin-left: 10px; }
     .second-step_container_position_btn-container .__delete_position i {
       font-size: 20px;
       color: #9f9f9f; }

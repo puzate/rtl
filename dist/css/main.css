@@ -2016,4 +2016,110 @@ body {
   .first-step_more-info_modal_describe ul.__social-nets {
     text-align: center; }
     .first-step_more-info_modal_describe ul.__social-nets li {
-      margin: 10px auto; } }
+      margin: 5px auto; }
+  .first-step_more-info_modal_describe p.__print {
+    display: none; }
+  .first-step_more-info_modal_price {
+    width: 100%; }
+  .first-step_more-info_modal_tabs ul {
+    margin-top: 10px; }
+  .first-step_more-info_modal_tabs ul li {
+    display: block;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: -.36em; }
+    .first-step_more-info_modal_tabs ul li a {
+      margin: 0;
+      border: 2px solid #e5e5e5;
+      border-bottom: none; }
+  .second-step_container_position_btn-container a {
+    width: 100%; }
+  .second-step_container_position_btn-container_price {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    float: none; }
+  .second-step_container_position_content_main_list {
+    margin-right: 5px;
+    margin-left: 5px;
+    border-bottom: none; }
+    .second-step_container_position_content_main_list ul li {
+      display: block; }
+  .second-step_container_position_content_main_imgs .__thumb-imgs {
+    max-width: 19%; }
+  .second-step_container_position_content_main_imgs {
+    margin-right: 5px;
+    margin-left: 5px; }
+  .second-step_container_position_content_main_imgs .__full-img {
+    max-width: 79%;
+    margin-right: 0; }
+  .second-step_container_position_content_main_describe {
+    margin-right: 5px;
+    margin-left: 5px; }
+  .gift-package-container_make-package,
+  .gift-package-container_package-with-gift,
+  .gift-package-container_package-price {
+    margin-bottom: 10px;
+    text-align: center; }
+  .forms-to-pay_forms-for-login,
+  .forms-to-pay_forms-for-sign-up,
+  .forms-delivery_container,
+  .third-step_modal_authorized_forms_login,
+  .third-step_modal_authorized_forms_sign-up {
+    margin-bottom: 10px; }
+  .forms-to-pay_forms-for-sign-up form p {
+    width: 100%; }
+  .user-login-info_save-package {
+    text-align: center; }
+  .forms-delivery_container form p {
+    max-width: 100%;
+    width: 100%; }
+  .payment-method {
+    margin-top: 20px; }
+  .contact-form {
+    margin-top: 20px; }
+  .container-form_container form p {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0; }
+  .products-in-package_position_delete {
+    float: left; }
+  .second-step_buy-block_right-block {
+    max-width: 100%;
+    text-align: center; }
+  .second-step_buy-block {
+    margin-top: 20px; }
+  .second-step_container_position.accepted .second-step_container_position_btn-container h4 {
+    display: block;
+    text-align: center;
+    position: relative; }
+  .second-step_container_position.accepted .second-step_container_position_btn-container h4:before {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .second-step_buy-block_left-block {
+    text-align: center; }
+  .third-step_modal_authorized {
+    margin-bottom: 5vh; }
+  .third-step_modal_authorized_forms {
+    padding-right: 5px;
+    padding-left: 5px; }
+  .third-step_modal_authorized_forms_login {
+    width: 100%;
+    padding-right: 10px; }
+  .third-step_modal_authorized_forms_sign-up {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 20px; }
+  .third-step_modal_authorized_forms_sign-up form p {
+    max-width: 100%; }
+  .first-step_more-info_modal {
+    max-width: 95vw; }
+  .third-step_modal_authorized {
+    max-width: 95vw; }
+  .second-step_choose-gift_position {
+    max-width: 100%;
+    width: 100%; }
+  .second-step_choose-gift {
+    margin-top: 5vh;
+    margin-bottom: 5vh; } }
